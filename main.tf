@@ -35,7 +35,6 @@ resource "aws_instance" "terraform" {
     inline = [
     "sudo apt update",
     "sudo apt install apache2 -y",
-    "sudo apt install mysql-client -y",
     "sudo systemctl start apache2",
     "sudo systemctl enable apache2",
     "git clone https://github.com/lucasgabriel-y/redirect.git",
